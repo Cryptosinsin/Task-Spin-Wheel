@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Spin Wheel</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .result {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 0; /* Reset previous margin */
+        }
+        .result h2, .result input {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Task Spin Wheel</h1>
+        <div class="wheel-container">
+            <canvas id="spinWheel"></canvas>
+        </div>
+        <div class="controls">
+            <button id="addTaskBtn"><i class="fas fa-plus"></i> Add Task</button>
+            <button id="spinWheelBtn"><i class="fas fa-sync-alt"></i> Spin Wheel</button>
+        </div>
+        <div class="task-input">
+            <input type="text" id="taskInput" placeholder="Enter a task">
+            <button id="saveTaskBtn">Save</button>
+        </div>
+        <div class="task-overview">
+            <h2>Task Overview</h2>
+            <table id="taskTable">
+                <thead>
+                    <tr>
+                        <th>Label</th>
+                        <th>Task</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div class="result">
+            <h2>Selected Task:</h2>
+            <input type="text" id="selectedTask" readonly>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

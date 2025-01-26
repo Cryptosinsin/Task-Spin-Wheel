@@ -1,0 +1,114 @@
+/* Matrix Theme */
+body {
+    font-family: 'Courier New', monospace;
+    background-color: black;
+    color: limegreen;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: black;
+    padding: 20px;
+    border: 2px solid limegreen;
+    border-radius: 10px;
+    box-shadow: 0 0 10px limegreen;
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+h1, h2 {
+    color: limegreen;
+    text-shadow: 0 0 5px limegreen;
+}
+
+.wheel-container {
+    margin: 20px auto;
+    width: 200px;
+    height: 200px;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid limegreen;
+    border-radius: 5px;
+    background-color: black;
+    color: limegreen;
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: limegreen;
+    color: black;
+}
+
+.task-input {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.task-input input {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid limegreen;
+    border-radius: 5px;
+    background-color: black;
+    color: limegreen;
+    font-family: 'Courier New', monospace;
+}
+
+.task-input button {
+    padding: 10px;
+    background-color: limegreen;
+    color: black;
+    border: 1px solid limegreen;
+}
+
+.task-overview table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid limegreen;
+}
+
+.task-overview th, .task-overview td {
+    padding: 10px;
+    border: 1px solid limegreen;
+    text-align: left;
+    color: limegreen;
+}
+
+.task-overview th {
+    background-color: black;
+    color: limegreen;
+}
+
+.result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#selectedTask {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid limegreen;
+    border-radius: 5px;
+    background-color: black;
+    color: limegreen;
+    font-family: 'Courier New', monospace;
+    margin-left: 10%;
+}
